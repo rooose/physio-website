@@ -1,14 +1,10 @@
 header {
-  top: 0;
-  right: 0;
+  display: flex;
   width: 100%;
   font: 12px "opensans-bold", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   margin: 0 auto;
-  z-index: 100;
-  position: fixed;
-  justify-content: center;
 }
 
 #nav-wrap {

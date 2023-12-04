@@ -1,0 +1,5 @@
+.nav-button {
+  display: flex;
+  width: 18em;
+  justify-content: center;
+}
