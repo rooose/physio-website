@@ -1,10 +1,23 @@
 import "./landingpage.css";
 import { Props } from "./navigation";
+import { Suspense } from "react";
+import { useImage } from "react-image";
+
+function MyImageComponent() {
+  const { src } = useImage({
+    srcList: "./src/Assets/isa.jpg",
+  });
+
+  return <img className="w-1/3" src={src} />;
+}
 
 export default function Presentation({ setIndex }: Props) {
   return (
     <div className="page flex gap-10 justify-between bg-sky-900">
-      <img className="w-1/3" src="./src/Assets/isa.jpg" />
+      <Suspense>
+        <MyImageComponent />
+      </Suspense>
+
       <div className="text-neutral-200 p-20 flex flex-col justify-center items-center gap-20">
         Tout au long de mon parcours professionnel j'ai toujours été passionnée
         par le fonctionnement du corps humain et ses capacités d'adaptation et
