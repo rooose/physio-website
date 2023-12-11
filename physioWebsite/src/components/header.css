@@ -46,3 +46,9 @@ ul#nav li a {
   line-height: 32px;
   text-decoration: none;
 }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 4rem;
+}

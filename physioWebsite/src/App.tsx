@@ -11,11 +11,11 @@ export default function App() {
   const { t } = useTranslation();
 
   return (
-    <>
-      <div className="flex flex-col grow-1 w-full max-h-full items-center">
+    <div className="page-container">
+      <div className="content-wrap flex flex-col max-h-full items-center">
         <Header />
         <Navigation setIndex={setIndex} />
-        <div className="mt-20 w-2/3 h-auto">
+        <div className="mt-6">
           {index == 0 && <LandingPage />}
           {index == 1 && <div>{t("page1")}</div>}
           {index == 2 && <div>{t("page2")}</div>}
@@ -23,6 +23,6 @@ export default function App() {
         </div>
         <Footer />
       </div>
-    </>
+    </div>
   );
 }

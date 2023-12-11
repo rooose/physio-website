@@ -1,9 +1,14 @@
+import "./landingpage.css";
+import Presentation from "./presentation";
+import Welcome from "./welcome";
+
 export default function LandingPage() {
   return (
-    <div className="flex gap-10 justify-between bg-slate-50">
-      <div className="text-black p-20">Isabelle Guévin</div>
-
-      <img className="w-1/3" src="./src/Assets/isa.jpg" />
+    <div className="flex flex-col gap-2 items-center">
+      <h1 className=" text-sky-950 ">Isabelle Guévin </h1>
+      <h2 className=" text-sky-950 ">Physiothérapeute </h2>
+      <Welcome />
+      <Presentation />
     </div>
   );
 }

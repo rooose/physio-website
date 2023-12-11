@@ -1,5 +1,6 @@
 import { Dispatch, SetStateAction } from "react";
 import "./navigation.css";
+
 import { useTranslation } from "react-i18next";
 
 interface Props {
@@ -16,13 +17,13 @@ export default function Navigation({ setIndex }: Props) {
           {t("home")}
         </button>
         <button onClick={() => setIndex(1)} className="nav-button">
-          {t("contact")}
+          {t("rpp")}
         </button>
         <button onClick={() => setIndex(2)} className="nav-button">
           {t("formations")}
         </button>
         <button onClick={() => setIndex(3)} className="nav-button">
-          3
+          {t("contact")}
         </button>
       </div>
     </>
