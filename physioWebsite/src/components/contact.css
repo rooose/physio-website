@@ -1,0 +1,9 @@
+.anchor {
+  font-weight: 500;
+  color: #dddddd;
+  text-decoration: inherit;
+}
+
+.anchor:hover {
+  color: #ffffff;
+}
