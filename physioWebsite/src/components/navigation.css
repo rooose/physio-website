@@ -1,6 +1,7 @@
 .nav-button {
   display: flex;
   max-width: 18em;
+  width: 18em;
   flex-grow: 1;
   justify-content: center;
 }

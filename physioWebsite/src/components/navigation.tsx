@@ -3,7 +3,7 @@ import "./navigation.css";
 
 import { useTranslation } from "react-i18next";
 
-interface Props {
+export interface Props {
   setIndex: Dispatch<SetStateAction<number>>;
 }
 
@@ -12,7 +12,7 @@ export default function Navigation({ setIndex }: Props) {
 
   return (
     <>
-      <div className="nav-bar px-12 flex w-full justify-between gap-2 mt-6">
+      <div className="nav-bar px-12 flex w-full gap-2 mt-6">
         <button onClick={() => setIndex(0)} className="nav-button">
           {t("home")}
         </button>
