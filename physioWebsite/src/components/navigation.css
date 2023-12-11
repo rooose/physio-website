@@ -1,5 +1,10 @@
 .nav-button {
   display: flex;
-  width: 18em;
+  max-width: 18em;
+  flex-grow: 1;
   justify-content: center;
+}
+
+.nav-bar {
+  max-width: 1400px;
 }

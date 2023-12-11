@@ -12,7 +12,7 @@ export default function Navigation({ setIndex }: Props) {
 
   return (
     <>
-      <div className="flex gap-2 mt-6">
+      <div className="nav-bar px-12 flex w-full justify-between gap-2 mt-6">
         <button onClick={() => setIndex(0)} className="nav-button">
           {t("home")}
         </button>
