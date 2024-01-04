@@ -19,6 +19,9 @@ export default function Navigation({ setIndex }: Props) {
         <button onClick={() => setIndex(1)} className="nav-button">
           {t("rpp")}
         </button>
+        <button onClick={() => setIndex(4)} className="nav-button">
+          {t("pediatrie")}
+        </button>
         <button onClick={() => setIndex(2)} className="nav-button">
           {t("formations")}
         </button>
