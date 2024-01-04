@@ -16,7 +16,7 @@ export default function Pediatrie() {
         <MyImageComponent />
       </Suspense>
 
-      <div className="text-neutral-200 p-20 flex flex-col justify-center items-center gap-10">
+      <div className="text-neutral-200 p-20 flex flex-col items-center gap-10">
         <b>Êtes-vous êtes préoccupé parce que:</b>
         <ul>
           <li>
