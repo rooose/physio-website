@@ -3,10 +3,11 @@ import "./App.css";
 import Header from "./components/header";
 import Navigation from "./components/navigation";
 import { useTranslation } from "react-i18next";
-import LandingPage from "./components/landingpage";
+import LandingPage from "./components/Pages/landingpage";
 import Footer from "./components/footer";
-import Formations from "./components/formations";
-import Contact from "./components/contact";
+import Formations from "./components/Pages/formations";
+import Contact from "./components/Pages/contact";
+import Reeducation from "./components/Pages/reeducation";
 
 export default function App() {
   const [index, setIndex] = useState(0);
@@ -19,7 +20,7 @@ export default function App() {
         <Navigation setIndex={setIndex} />
         <div className="mt-6">
           {index == 0 && <LandingPage setIndex={setIndex} />}
-          {index == 1 && <div>{t("page1")}</div>}
+          {index == 1 && <Reeducation />}
           {index == 2 && <Formations />}
           {index == 3 && <Contact />}
         </div>

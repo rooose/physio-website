@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import { useImage } from "react-image";
 function MyImageComponent() {
   const { src } = useImage({
-    srcList: "./src/Assets/bebe.jpg",
+    srcList: "./src/Assets/sport.jpg",
   });
 
   return <img className="w-1/3" src={src} />;
@@ -11,7 +11,6 @@ function MyImageComponent() {
 export default function Formations() {
   return (
     <div className="page flex gap-10 justify-left bg-sky-900">
-      {/* <img className="w-1/3" src="./src/Assets/bebe.jpg" /> */}
       <Suspense>
         <MyImageComponent />
       </Suspense>

@@ -1,7 +1,7 @@
-import "./landingpage.css";
-import { Props } from "./navigation";
-import Presentation from "./presentation";
-import Welcome from "./welcome";
+import "../landingpage.css";
+import { Props } from "../navigation";
+import Presentation from "../presentation";
+import Welcome from "../welcome";
 
 export default function LandingPage({ setIndex }: Props) {
   return (
