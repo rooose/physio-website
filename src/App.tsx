@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Header from "./components/header";
 import Navigation from "./components/navigation";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 import LandingPage from "./components/Pages/landingpage";
 import Footer from "./components/footer";
 import Formations from "./components/Pages/formations";
@@ -14,7 +14,7 @@ import {BrowserView, MobileView} from 'react-device-detect';
 
 export default function App() {
   const [index, setIndex] = useState(0);
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
     <div className="page-container">
